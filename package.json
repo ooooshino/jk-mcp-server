@@ -1,0 +1,29 @@
+{
+  "name": "jk-mcp-server",
+  "version": "0.1.0",
+  "description": "用于 AI Loop 验证的只读 Jenkins MCP 服务",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx --test test/*.test.ts",
+    "check": "tsc --noEmit",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "jenkins"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
